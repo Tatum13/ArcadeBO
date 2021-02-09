@@ -1,5 +1,5 @@
-Deelnemers:
-
-Tatum de Vries - Patricia Kuipers - Bas de Reus
+Beroepsopdracht periode 3
 
 SD1C
+# Titel
+### van Tatum de Vries, Patricia Kuipers en Bas de Reus
