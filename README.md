@@ -1,4 +1,2 @@
-Tatum de Vries
-Patricia Kuipers
-Bas de Reus
-SD1C
+# Titel
+### van Tatum de Vries, Patricia Kuipers en Bas de Reus
