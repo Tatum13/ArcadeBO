@@ -1,8 +1,4 @@
-Beroepsopdracht periode 3
+# TEAM SWAPM beroepsopdracht
+#### Tatum de Vries, Patricia Kuipers en Bas de Reus van SD1C
 
-trello: https://trello.com/b/NM6x2vlg/team-swamp-f2m3
-
-
-SD1C
-# TEAM 7
-### van Tatum de Vries, Patricia Kuipers en Bas de Reus
+<p>Trello: https://trello.com/b/NM6x2vlg/team-swamp-f2m3
