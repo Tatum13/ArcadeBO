@@ -57,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\destroy.cs" />
+    <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\WASDMovement.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Skybox\Readme.txt" />
