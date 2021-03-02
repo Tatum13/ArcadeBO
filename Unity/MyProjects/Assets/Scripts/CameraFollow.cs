@@ -37,7 +37,7 @@ public class CameraFollow : MonoBehaviour
         Vector3 newPos = PlayerTransform.position + _cameraOffset;
 
         transform.position = Vector3.Slerp(transform.position, newPos, SmoothFactor);
-
+        
         if (LookAtPlayer || RotateAroundPlayer)
             transform.LookAt(PlayerTransform);
     }
