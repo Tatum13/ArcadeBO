@@ -17,7 +17,7 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(Vector3.up * 150);
+            rb.AddForce(Vector3.up * 150);//jump movement.
         }
     }
 }
