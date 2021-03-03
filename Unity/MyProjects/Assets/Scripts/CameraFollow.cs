@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _cameraOffset = transform.position - PlayerTransform.position;   
+        _cameraOffset = transform.position - PlayerTransform.position;
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class CameraFollow : MonoBehaviour
         Vector3 newPos = PlayerTransform.position + _cameraOffset;
 
         transform.position = Vector3.Slerp(transform.position, newPos, SmoothFactor);
-        
+
         if (LookAtPlayer || RotateAroundPlayer)
             transform.LookAt(PlayerTransform);
     }

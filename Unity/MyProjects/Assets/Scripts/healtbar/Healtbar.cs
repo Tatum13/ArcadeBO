@@ -3,20 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Healtbar : MonoBehaviour
+public class healthbar : MonoBehaviour
 {
 
-    public Slider slider;//slider
+	public Slider slider;
+	public Gradient gradient;
+	public Image fill;
 
-    public void SetMaxHealth(int health)//hier mee kan de script de slider in unity naar max healt zetten
-    {
-        slider.maxValue = health;
-        slider.value = health;
-    }
+	public void SetMaxHealth(int health)
+	{
+		slider.maxValue = health;
+		slider.value = health;
 
-    public void SetHealth(int health)//slider gedeelte
-    {
-        slider.value = health;
-    }
+		fill.color = gradient.Evaluate(1f);
+	}
+
+	public void SetHealth(int health)
+	{
+		slider.value = health;
+
+		fill.color = gradient.Evaluate(slider.normalizedValue);
+	}
 
 }

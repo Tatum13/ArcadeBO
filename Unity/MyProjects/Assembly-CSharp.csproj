@@ -50,6 +50,7 @@
      <Compile Include="Assets\destroy.cs" />
      <Compile Include="Assets\Scripts\healtbar\Healtbar.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\MainScript.cs" />
      <Compile Include="Assets\Scripts\WASDMovement.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\healtbar\player_420.cs" />
@@ -638,9 +639,6 @@
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/MA/Bewijzenmap/Periode 1.3/BO/ArcadeBO/Unity/MyProjects/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>D:/MA/Bewijzenmap/Periode 1.3/BO/ArcadeBO/Unity/MyProjects/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/MA/Bewijzenmap/Periode 1.3/BO/ArcadeBO/Unity/MyProjects/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
