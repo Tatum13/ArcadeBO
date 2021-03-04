@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Map 2.unity
+=======
+- path: Assets/Scenes/healtbar(2).unity
+>>>>>>> 8c7241df85654a2037558d35eb75b004c86a8298
   isLoaded: 1
   isActive: 1
   isSubScene: 0
