@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Patricia/Documents/000_Mediacollege/bewijzenmap/1.3/f2m3BO/ArcadeBO/Unity/MyProjects
+C:/Users/Patricia/Documents/000_Mediacollege/bewijzenmap/1.3/GME/UnityProject/MyProjects
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62991
-Successfully changed project path to: C:/Users/Patricia/Documents/000_Mediacollege/bewijzenmap/1.3/f2m3BO/ArcadeBO/Unity/MyProjects
-C:/Users/Patricia/Documents/000_Mediacollege/bewijzenmap/1.3/f2m3BO/ArcadeBO/Unity/MyProjects
+57600
+Successfully changed project path to: C:/Users/Patricia/Documents/000_Mediacollege/bewijzenmap/1.3/GME/UnityProject/MyProjects
+C:/Users/Patricia/Documents/000_Mediacollege/bewijzenmap/1.3/GME/UnityProject/MyProjects
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 131.09 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 101.65 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Patricia/Documents/000_Mediacollege/bewijzenmap/1.3/f2m3BO/ArcadeBO/Unity/MyProjects/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Patricia/Documents/000_Mediacollege/bewijzenmap/1.3/GME/UnityProject/MyProjects/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -35,42 +35,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011704 seconds.
+Registered in 0.011616 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 112.29 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 97.10 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.287 seconds
+- Completed reload, in  5.172 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004074 seconds.
+Registered in 0.003737 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.157 seconds
+- Completed reload, in  3.228 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.25 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.23 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1106 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1104 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 71.5 MB.
-System memory in use after: 71.6 MB.
+System memory in use after: 71.5 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1575.
-Total: 5.898300 ms (FindLiveObjects: 0.361700 ms CreateObjectMapping: 0.103200 ms MarkObjects: 5.044700 ms  DeleteObjects: 0.385400 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1573.
+Total: 4.840900 ms (FindLiveObjects: 0.314500 ms CreateObjectMapping: 0.107600 ms MarkObjects: 4.047100 ms  DeleteObjects: 0.367700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Map 1.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map 1.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f015c244b9559dec65bb9ec34a11b97a') in 0.050398 seconds
+  Import took 0.058884 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

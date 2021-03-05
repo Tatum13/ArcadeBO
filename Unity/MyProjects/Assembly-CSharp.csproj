@@ -57,12 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\destroy.cs" />
-    <Compile Include="Assets\Scripts\healtbar\Healtbar.cs" />
-    <Compile Include="Assets\Scripts\healtbar\player_healt.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
-    <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\WASDMovement.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\MainScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Skybox\Readme.txt" />
