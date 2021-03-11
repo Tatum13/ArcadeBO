@@ -58,10 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\destroy.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\Fences\LowPolyFencePack\Scripts\DoorToggle.cs" />
->>>>>>> a5b849b07b6d269dcf50ad1c9524068e93e1bbf4
     <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\WASDMovement.cs" />
     <Compile Include="Assets\Scripts\healtbar\HealthBar.cs" />
