@@ -57,6 +57,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\destroy.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Fences\LowPolyFencePack\Scripts\DoorToggle.cs" />
+    <Compile Include="Assets\Scripts\MainScript.cs" />
+    <Compile Include="Assets\Scripts\WASDMovement.cs" />
+    <Compile Include="Assets\Scripts\healtbar\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\healtbar\player_health.cs" />
+    <Compile Include="Assets\Fences\LowPolyFencePack\Scripts\DoorController.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\RotateScript.cs" />
+>>>>>>> 233584eef1726c467ff1abf163b3ea788b6ecb6c
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Skybox\Readme.txt" />
