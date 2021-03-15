@@ -45,6 +45,6 @@ public class CameraFollow : MonoBehaviour
         if (LookAtPlayer || RotateAroundPlayer)
             transform.LookAt(PlayerTransform);
 
-        Debug.Log(transform.localPosition + "vs" + transform.position);
+        //Debug.Log(transform.localPosition + "vs" + transform.position);
     }
 }

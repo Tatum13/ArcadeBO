@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\healtbar\player_health.cs" />
     <Compile Include="Assets\Fences\LowPolyFencePack\Scripts\DoorController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\RotateScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Skybox\Readme.txt" />
