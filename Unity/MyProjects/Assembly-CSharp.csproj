@@ -56,19 +56,19 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BrokenVector\UltimateDungeonPack\Scripts\LightImprove.cs" />
     <Compile Include="Assets\destroy.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Fences\LowPolyFencePack\Scripts\DoorToggle.cs" />
     <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\WASDMovement.cs" />
     <Compile Include="Assets\Scripts\healtbar\HealthBar.cs" />
+    <Compile Include="Assets\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\MouseCamLook.cs" />
     <Compile Include="Assets\Scripts\healtbar\player_health.cs" />
     <Compile Include="Assets\Fences\LowPolyFencePack\Scripts\DoorController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\RotateScript.cs" />
-    <Compile Include="Assets\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\MouseCamLook.cs" />
     <Compile Include="Assets\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\CharacterController.cs" />
-    <Compile Include="Assets\BrokenVector\UltimateDungeonPack\Scripts\LightImprove.cs" />
+    <Compile Include="Assets\Scripts\RotateScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Skybox\Readme.txt" />
