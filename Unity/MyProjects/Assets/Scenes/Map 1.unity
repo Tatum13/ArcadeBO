@@ -46107,6 +46107,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4661435515762813124, guid: e289bf5debb17f6459818c207d781953, type: 3}
   m_PrefabInstance: {fileID: 2056413466}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &913591182618941734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 913591183067302118, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_Name
+      value: Hell's_Gate
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 119.704315
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 54.27214
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 666.5566
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 913591183067302119, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 611069ea68bc3994d9cf3ed02863e199, type: 3}
 --- !u!1001 &6435681437296669549
 PrefabInstance:
   m_ObjectHideFlags: 0
