@@ -17,7 +17,7 @@ public class MainScript : MonoBehaviour
     {
         Cursor.visible = false;
         // Exit playmode upon pressing escape
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.R))
             EditorApplication.isPlaying = false; // EditorApplication.isPlaying is the boolean of whether playmode is True or False
     }
 }
