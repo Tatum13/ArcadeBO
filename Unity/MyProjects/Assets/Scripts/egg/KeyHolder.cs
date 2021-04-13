@@ -12,9 +12,9 @@ public class KeyHolder : MonoBehaviour
 
     private void Start()
     {
-        purpleGate = GameObject.Find("PurpleGate");
-        greenGate = GameObject.Find("GreenGate");
-        goldGate = GameObject.Find("GoldGate");
+        purpleGate = GameObject.Find("TextPurpleGate1");
+        greenGate = GameObject.Find("TextGreenGate1 ");
+        goldGate = GameObject.Find("TextGoldGate1 ");
     }
 
     private void Awake()
@@ -46,7 +46,22 @@ public class KeyHolder : MonoBehaviour
         {
             AddKey(key.GetKeyType());
             Destroy(key.gameObject);
-            //Destroy(purpleGate.GetComponent<TMPro.TextMeshProUGUI>().text);
+        }
+
+        foreach (Egg_key.KeyType keyType in keyList)
+        {
+            if(keyType == Egg_key.KeyType.Purple)
+            {
+                Destroy(purpleGate);
+            }
+            if(keyType == Egg_key.KeyType.Green)
+            {
+                Destroy(greenGate);
+            }
+            if(keyType == Egg_key.KeyType.Gold)
+            {
+                Destroy(goldGate);
+            }
         }
 
         EggGate eggGate = collider.GetComponent<EggGate>();
