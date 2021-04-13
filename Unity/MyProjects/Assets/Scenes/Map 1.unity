@@ -38155,15 +38155,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ee210b3aabe7d24591f4f4cc3bf2db7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -540.1
+      value: -752.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ee210b3aabe7d24591f4f4cc3bf2db7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.021313
+      value: -14.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ee210b3aabe7d24591f4f4cc3bf2db7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 338.6
+      value: -4.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ee210b3aabe7d24591f4f4cc3bf2db7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -45238,15 +45238,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ee210b3aabe7d24591f4f4cc3bf2db7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -261.9
+      value: 111.57
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ee210b3aabe7d24591f4f4cc3bf2db7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7
+      value: -18.62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ee210b3aabe7d24591f4f4cc3bf2db7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 94.8
+      value: 235.22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ee210b3aabe7d24591f4f4cc3bf2db7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -51541,6 +51541,7 @@ GameObject:
   - component: {fileID: 6229717437474141574}
   - component: {fileID: 6229717437474141573}
   - component: {fileID: 6229717437474141575}
+  - component: {fileID: 6229717437474141576}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -51658,6 +51659,18 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 2068011593}
+--- !u!114 &6229717437474141576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6229717437474141568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b9c59a6b29794499e88798e38fef0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6349049227174264492
 Transform:
   m_ObjectHideFlags: 0
