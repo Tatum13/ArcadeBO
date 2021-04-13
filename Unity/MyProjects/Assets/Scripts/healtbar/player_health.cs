@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player_health : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class player_health : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             TakeDamage(20);
+        }
+        if(currentHealth == 0)
+        {
+            SceneManager.LoadScene("hoofdmenu");
         }
     }
     void TakeDamage(int damage)

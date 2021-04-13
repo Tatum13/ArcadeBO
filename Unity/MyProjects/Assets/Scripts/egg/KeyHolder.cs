@@ -6,6 +6,17 @@ public class KeyHolder : MonoBehaviour
 {
     private List<Egg_key.KeyType> keyList;
 
+    public GameObject purpleGate;
+    public GameObject greenGate;
+    public GameObject goldGate;
+
+    private void Start()
+    {
+        purpleGate = GameObject.Find("PurpleGate");
+        greenGate = GameObject.Find("GreenGate");
+        goldGate = GameObject.Find("GoldGate");
+    }
+
     private void Awake()
     {
         keyList = new List<Egg_key.KeyType>();
@@ -15,6 +26,7 @@ public class KeyHolder : MonoBehaviour
     {
         Debug.Log("Added Key: " + keyType);
         keyList.Add(keyType);
+
     }
 
     public void RemoveKey(Egg_key.KeyType keyType)
@@ -34,6 +46,7 @@ public class KeyHolder : MonoBehaviour
         {
             AddKey(key.GetKeyType());
             Destroy(key.gameObject);
+            //Destroy(purpleGate.GetComponent<TMPro.TextMeshProUGUI>().text);
         }
 
         EggGate eggGate = collider.GetComponent<EggGate>();
