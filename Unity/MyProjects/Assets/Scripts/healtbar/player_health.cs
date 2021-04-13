@@ -11,10 +11,16 @@ public class player_health : MonoBehaviour
 
     public HealthBar healthBar;
 
+    //colliders
+    public GameObject test;
+
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        //colliders
+        test = GameObject.Find("test");
     }
 
     void Update()
@@ -23,11 +29,22 @@ public class player_health : MonoBehaviour
         {
             TakeDamage(20);
         }
-        if(currentHealth == 0)
+
+        if(currentHealth == 0) //death
         {
             SceneManager.LoadScene("hoofdmenu");
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+        if (collision.gameObject == test)
+        {
+            TakeDamage(10);
+        }
+    }
+
     void TakeDamage(int damage)
     {
         currentHealth -= damage;
