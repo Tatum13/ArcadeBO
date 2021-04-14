@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player_mana : MonoBehaviour
 {
+    Animator animator;
 
     public int maxMana = 100;
     public int minMana = 0;
@@ -15,6 +16,8 @@ public class Player_mana : MonoBehaviour
     {
         currentMana = maxMana;
         manaBar.SetMaxMana(maxMana);
+
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -22,6 +25,18 @@ public class Player_mana : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             DecreaseMana(1);
+        }
+
+        if(currentMana > 0)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                animator.SetBool("isAttackingMagic", true);
+            }
+            else
+            {
+                animator.SetBool("isAttackingMagic", false);
+            }
         }
     }
 

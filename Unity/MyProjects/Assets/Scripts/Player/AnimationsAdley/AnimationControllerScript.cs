@@ -67,15 +67,5 @@ public class AnimationControllerScript : MonoBehaviour
         {
             animator.SetBool("isAttackingPunch", false);
         }
-
-        //Magic attack
-        if (Input.GetMouseButtonDown(1))
-        {
-            animator.SetBool("isAttackingMagic", true);
-        }
-        else
-        {
-            animator.SetBool("isAttackingMagic", false);
-        }
     }
 }
