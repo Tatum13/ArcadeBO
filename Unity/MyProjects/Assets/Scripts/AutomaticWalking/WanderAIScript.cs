@@ -14,16 +14,12 @@ public class WanderAIScript : MonoBehaviour
 
     Rigidbody rb;
 
-    Animator animator;
-
     // Start is called before the first frame update
     void Start()
     {
-      //  Debug.Log("Start");
+        Debug.Log("Start");
 
         rb = GetComponent<Rigidbody>();
-
-        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,12 +28,10 @@ public class WanderAIScript : MonoBehaviour
         if (isWandering == false)
         {
             StartCoroutine(Wander());
-            
         }
         if (isRotatingRight == true)
         {
             transform.Rotate(transform.up * Time.deltaTime * rotSpeed);
-           // animator.SetBool("isRunning", true);
 
         }
         if (isRotatingLeft == true)
@@ -47,19 +41,13 @@ public class WanderAIScript : MonoBehaviour
         if (isWalking == true)
         {
             rb.AddForce(transform.forward * moveSpeed);
-            animator.SetBool("isRunning", true);
-        }
-        else if(isWalking == false)
-        {
-            rb.velocity = new Vector3(0, 0, 0);
-            animator.SetBool("isRunning", false);
         }
     }
 
     IEnumerator Wander()
     {
         int rotTime = Random.Range(1, 3);
-        int rotateWait = Random.Range(10, 15);
+        int rotateWait = Random.Range(1, 4);
         int rotateLorR = Random.Range(1, 2);
         int walkWait = Random.Range(1, 4);
         int walkTime = Random.Range(1, 5);
