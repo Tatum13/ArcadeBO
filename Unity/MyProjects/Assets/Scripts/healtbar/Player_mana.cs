@@ -6,6 +6,7 @@ public class Player_mana : MonoBehaviour
 {
 
     public int maxMana = 100;
+    public int minMana = 0;
     public int currentMana;
 
     public ManaBar manaBar;
@@ -24,25 +25,33 @@ public class Player_mana : MonoBehaviour
         }
     }
 
-  // void LateUpdate()
-  // {
-  //     if(currentMana == 0)
-  //     {
-  //         yield return new WaitForSeconds(15);
-  //         IncreaseMana(10);
-  //     }
-  // }
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag.Equals("Egg"))
+        {
+            IncreaseMana(Random.Range(1, 20));
+        }
+    }
 
     void DecreaseMana(int decrease)
     {
         currentMana -= decrease;
-
         manaBar.SetMana(currentMana);
+
+        if(currentMana < minMana)
+        {
+            currentMana = minMana;
+        }
     }
 
     void IncreaseMana(int increase)
     {
         currentMana += increase;
         manaBar.SetMana(currentMana);
+
+        if (currentMana > maxMana)
+        {
+            currentMana = maxMana;
+        }
     }
 }

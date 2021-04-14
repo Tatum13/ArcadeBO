@@ -9,7 +9,7 @@ public class WASDMovement : MonoBehaviour
 
     public float baseSpeed = 10.0f;
 
-    public float speed;
+    public float speed = 10.0f;
     public float sprintSpeed = 20.0f;
     public float gravity = 10.0f;
     public float maxVelocityChange = 10.0f;
@@ -17,7 +17,7 @@ public class WASDMovement : MonoBehaviour
     public float jumpHeight = 2.0f;
     private bool grounded = false;
 
-
+    public Player_stanima Ps;
 
     void Awake()
     {
@@ -26,6 +26,8 @@ public class WASDMovement : MonoBehaviour
         rigidbody.useGravity = false;
 
         speed = baseSpeed;
+
+        Ps = GetComponent<Player_stanima>();
     }
 
     void FixedUpdate()
@@ -57,12 +59,16 @@ public class WASDMovement : MonoBehaviour
             rotation = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
             transform.Rotate(0, rotation, 0);
 
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
-                speed = sprintSpeed;
+                if(Ps.currentStanima > 0)
+                {
+                    Debug.Log("he");
+                    speed = sprintSpeed;
+                }
             }
 
-            if (Input.GetKeyUp(KeyCode.LeftShift))
+            else
             {
                 speed = baseSpeed;
             }

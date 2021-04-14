@@ -11,7 +11,6 @@ public class player_health : MonoBehaviour
 
     public HealthBar healthBar;
 
-    //colliders
     public GameObject test;
 
     void Start()
@@ -19,7 +18,6 @@ public class player_health : MonoBehaviour
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
 
-        //colliders
         test = GameObject.Find("test");
     }
 
@@ -38,17 +36,35 @@ public class player_health : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
+        //dit was een test om damge te krijgen
         if (collision.gameObject == test)
         {
             TakeDamage(10);
         }
     }
 
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag.Equals("Egg"))
+        {
+            IncreaseHealth(Random.Range(1, 20));
+        }
+    }
+
     void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
         healthBar.SetHealth(currentHealth);
+    }
+
+    void IncreaseHealth(int increase)
+    {
+        currentHealth += increase;
+        healthBar.SetHealth(currentHealth);
+
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
     }
 }
