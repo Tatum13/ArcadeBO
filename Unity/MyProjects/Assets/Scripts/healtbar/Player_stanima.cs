@@ -20,7 +20,7 @@ public class Player_stanima : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            minder(25);
+            minder(5);
         }
    }
 

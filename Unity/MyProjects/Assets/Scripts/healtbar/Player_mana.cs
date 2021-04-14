@@ -18,11 +18,21 @@ public class Player_mana : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetMouseButton(1))
         {
-            DecreaseMana(10);
+            DecreaseMana(1);
         }
     }
+
+    void LateUpdate()
+    {
+        if(currentMana == 0)
+        {
+            yield return new WaitForSeconds(15);
+            IncreaseMana(10);
+        }
+    }
+
     void DecreaseMana(int decrease)
     {
         currentMana -= decrease;
@@ -30,4 +40,9 @@ public class Player_mana : MonoBehaviour
         manaBar.SetMana(currentMana);
     }
 
+    void IncreaseMana(int increase)
+    {
+        currentMana += increase;
+        manaBar.SetMana(currentMana);
+    }
 }

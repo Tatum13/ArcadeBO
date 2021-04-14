@@ -4,28 +4,32 @@ using UnityEngine;
 
 public class WanderAIScript : MonoBehaviour
 {
-    public float moveSpeed = 3f;
+    public float moveSpeed = 20f;
     public float rotSpeed = 100f;
 
     private bool isWandering = false;
     private bool isRotatingLeft = false;
     private bool isRotatingRight = false;
     private bool isWalking = false;
-    
+
+    Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("Start");
+
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isWandering == false)
+        if (isWandering == false)
         {
             StartCoroutine(Wander());
         }
-        if(isRotatingRight == true)
+        if (isRotatingRight == true)
         {
             transform.Rotate(transform.up * Time.deltaTime * rotSpeed);
 
@@ -34,9 +38,9 @@ public class WanderAIScript : MonoBehaviour
         {
             transform.Rotate(transform.up * Time.deltaTime * -rotSpeed);
         }
-        if(isWalking == true)
+        if (isWalking == true)
         {
-            transform.position += transform.forward * moveSpeed * Time.deltaTime;
+            rb.AddForce(transform.forward * moveSpeed);
         }
     }
 
@@ -60,7 +64,7 @@ public class WanderAIScript : MonoBehaviour
 
         yield return new WaitForSeconds(rotateWait);
 
-        if(rotateLorR == 1)
+        if (rotateLorR == 1)
         {
             isRotatingRight = true;
             yield return new WaitForSeconds(rotTime);
