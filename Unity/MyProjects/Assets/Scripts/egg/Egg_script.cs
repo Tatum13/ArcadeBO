@@ -10,10 +10,12 @@ public class Egg_script : MonoBehaviour
     private bool isUp = false;
     public float speed = 0.004f;
 
+
     private void Start()
     {
         eggsAmount = 0;
         eggsCounter = GameObject.Find("Egg_counter");
+
     }
 
     void Update()

@@ -24,14 +24,14 @@ public class Player_mana : MonoBehaviour
         }
     }
 
-    void LateUpdate()
-    {
-        if(currentMana == 0)
-        {
-            yield return new WaitForSeconds(15);
-            IncreaseMana(10);
-        }
-    }
+  // void LateUpdate()
+  // {
+  //     if(currentMana == 0)
+  //     {
+  //         yield return new WaitForSeconds(15);
+  //         IncreaseMana(10);
+  //     }
+  // }
 
     void DecreaseMana(int decrease)
     {
